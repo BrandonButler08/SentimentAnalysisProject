@@ -1,0 +1,14 @@
+run_short:
+	python3 sentiment_analysis.py personal_scoring_short.txt shortRun_test_corpus
+
+run_long:
+	python3 sentiment_analysis.py personal_scoring_long.txt longRun_test_corpus
+
+run_manual:
+	python3 sentiment_analysis.py manual_scoring.txt manual_test_corpus
+
+setup:
+	pip install -r requirements.txt
+
+clean:
+	rm -rf __pycache__
